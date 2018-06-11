@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/highcharts-more.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="slider/js/flickerplate.js"></script>
+  <script src="scripts.js"></script> 
+   
+  <link rel="stylesheet" type="text/css" href="slider/css/flickerplate.css" >                                                                             
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  
+  <title>Vzorová stránka</title>
+  </head>
+  <body>
+  <div id="main-menu">
+    <div><a href="#" title="Navštívit webové stránky Etnetera, a.s."><img src="pictures/logo.png" align="left" id="logo" alt="Logo Etnetera, a.s."></a></div>
+    <nav>
+	  <div class="menu-bars">
+	    <i class="fas fa-bars fa-2x"></i> 
+	  </div>
+	  <ul>
+	    <li><a href="#" title="Na hlavní stránku">DOMŮ</a></li>
+	    <li class="active"><a href="#" title="O společnosti">KDO JSME</a></li>
+	    <li><a href="#" title="Naše činnost">CO DĚLÁME</a></li>
+	    <li><a href="#" title="Reference zákazníků">REFERENCE</a></li>
+	    <li><a href="#" title="Volné pracovní pozice">PRÁCE U NÁS (4)</a></li>
+	    <li><a href="#" title="Kontakt">KONTAKT</a></li>
+	  </ul>
+	</nav>
+</div>
+<div class="carousel">
+  <ul>
+    <li data-background="pictures/obr1.png">
+      <div class="carousel-nadpis">Mobile development #1</div>
+      <div class="carousel-text">
+         Efficiently unleash cross-media information without cross-media value. <br />
+         Quickly maximize timely deliverables for real-time schemas. <br /><br />
+         Dramatically maintain cliks-and mortar solutions without functional solutions.
+      </div>
+      <div class="carousel-button"><a href="#" title="Více informací">Více o mobile</a></div>
+    </li>
+    <li data-background="pictures/obr2.png">
+      <div class="carousel-nadpis">Mobile development #2</div>
+      <div class="carousel-text">
+         Efficiently unleash cross-media information without cross-media value. <br />
+         Quickly maximize timely deliverables for real-time schemas. <br /><br />
+         Dramatically maintain cliks-and mortar solutions without functional solutions.
+      </div>
+      <div class="carousel-button"><a href="#" title="Více informací">Více o mobile</a></div>
+    </li>
+  </ul>
+</div>
+<div id="bar">
+    <span class="label">PŘED 12 DNY</span>&nbsp;&nbsp;<span class="text">Jiří Štěpán z Etnetera Activate poodhalil zákulisí vykutálené kampaně.&nbsp;&nbsp;&nbsp;</span><a href="#" title="Přečíst článek">Přečíst</a>
+</div>
+<div id="main">
+    <div id="prvni-text">
+      <span class="hlavni-nadpis">Fronty u kávovaru</span><br />
+      <img id="obr1" src="pictures/kava.png" alt="Káva" title="Káva" />
+      <p>Arabica latte shop macchiato doppio coffe steamed. Brewed, macchiato grounds medium, eu breve grinder frappuccino americano. Pumkin spice, caffeine chicory dark medium araabica macchiato instant rich. Et, single shot aged half and half lungo whipped, cinnamon cappuccino whipped id mazagran.</p>
+      <p><b>Con panna</b> sugar macchiato so macchiato in skinny variety mug that. A plunger pot acerbic, brewed medium java aromatic coffee. At mocha wings acerbic beans medium saucer. Cup extra sit half and half robust java crema turkish.</p>
+      <p>Medium aroma cream qui medium coffee arabica, caffeine et <a href="#"  title="odkaz">caramelization cup</a> plunger pot. Eu, plunger pot organic dark, cinna-mon, redeye wings fair trade whipped lungo crema. Carajillo carameliyation americano, plunger pot, filter coffee foam siphon roast and java.</p>
+      <p>Galao a, breve, at white, latte variety irish at flavour barista. Half and half, so, sweet, <span class="underline">affogato galão<span class="tooltip"><b>espresso!</b></span></span>, half and half sugar irish trifecta chicory. Single origin, espresso, con panna french press et steamed robust.</p>
+    </div>
+    <div id="graphs">
+         <div class="graph">
+            <img src="pictures/logo_cast.png" class="logo_cast" alt="Logo" title="Logo">
+            <img src="pictures/hodiny.png" class="hodiny_cast" alt="Hodiny" title="Hodiny">
+            <div id="graph1" title="Graf vytíženosti pobočky v pondělí"></div>          
+            <div class="legenda">
+              <ul>
+                <li class="text"><div class="bez_front"></div>&nbsp;&nbsp;&nbsp;&nbsp;bez fronty</li>
+                <li class="text"><div class="moznost_front"></div>&nbsp;&nbsp;&nbsp;&nbsp;možnost fronty</b></li>
+                <li class="text"><div class="pravdepodobnost_front"></div>&nbsp;&nbsp;&nbsp;&nbsp;pravděpodobné čekání ve frontě</li>
+              </ul>
+            </div>
+         </div>  <br /><br />
+         <div class="graph">
+            <img src="pictures/logo_cast.png" class="logo_cast" alt="Logo" title="Logo">
+            <img src="pictures/hodiny.png" class="hodiny_cast" alt="Hodiny" title="Hodiny">
+            <div id="graph2" title="Graf vytíženosti pobočky v pondělí"></div>          
+            <div class="legenda">
+              <ul>
+                <li class="text"><div class="bez_front"></div>&nbsp;&nbsp;&nbsp;&nbsp;bez fronty</li>
+                <li class="text"><div class="moznost_front"></div>&nbsp;&nbsp;&nbsp;&nbsp;možnost fronty</li>
+                <li class="text"><div class="pravdepodobnost_front"></div>&nbsp;&nbsp;&nbsp;&nbsp;pravděpodobné čekání ve frontě</li>
+              </ul>
+            </div>
+         </div>
+    </div>
+    <div id="druhy-text">
+       <span class="hlavni-nadpis-2">Více o kávě</span>
+       <div class="sloupce">
+          <p>
+          Shop robust café au lait, cortado that, kopi-luwak skinny sweet crema fair <b>trade aged</b>, cultivar medium decaffeinat-ed medium siphon crema cappuccino macchiato froth roast cinnamon aroma crema. Con panna americano skinny blue mountain decaffeinated, trifecta barista sugar, in saucer in filter that.
+          Roast sit, robusta aged spoon, filter beans blue mountain milk crema dark eu <a href="#" title="odkaz">affogato barista</a> caffeine grinder, aromatic instant cup as robusta steamed doppio. Aftertaste, kopi-luwak, cappuccino siphon beans galão de-caffeinated mug, froth half and <b>half eu java roast</b>, lungo, id fair trade organic doppio filter instant carajillo.
+         </p>
+         <p>
+          Id siphon and, java, cappuccino milk cortado, siphon macchiato galão a irish flavour. Carajillo irish percolator steamed, medium galão latte, mocha est, medium, iced cappuccino americano, carameliyation ristretto, in latte, flavour cup roast trifecta aged. 
+          Variety single origin steamed, at, galão bar turkish con panna cream aroma variety carajillo cinnamon. Iced, single shot, est cup shop viennese dark crema macchiato wings single shot plunger pot foam aftertaste so to go white at acerbic a aftertaste. 
+         </p>
+         <p>
+          Irish carajillo decaffeinated instant, pumpkin spice as, cup, dripper strong breve, est white crema viennese latte. Irish cup medium body organic, white americano galão plunger pot coffee, robust, carajillo, steamed, cream, java, cinnamon mazagran so caffeine latte flavour.
+          <b> Shop, turkish iced</b> qui that steamed sweet, mazagran, macchiao est robusta spoon as, rich eu crema, chicory foam single shot organic sugar galão seasonal trifecta. Viennese half and half organic aged <a href="#"  title="odkaz">extraction cup</a>, espresso irish latte mug grinder turkish variety.
+         </p>
+       </div>
+    </div>
+</div>
+<div id="paticka">
+   <span id="copyright">COPYRIGHT</span><br />
+   <span id="copyright2">&copy; 2018 ETNETERA</span><br /><br />
+   <span>Jsme hrdým členem <a href="#" title="Navštívit webové stránky společnosti">Etnetera Group</a></span>
+</p>
+  </body>
+</html>
+

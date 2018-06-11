@@ -1,0 +1,429 @@
+/* CSS Document */
+
+/* Importování css souboru s fonty  */
+@import "fonts/fonts.css";
+
+/* Všeobecté tagy */
+body{
+  margin: 0;
+}
+p{
+  font-family: open-sans;
+  font-size: 1em;
+  text-align: justify;
+  line-height: 1.5;
+  padding-bottom: 10px;
+}
+a{
+  color: #e84d0f;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+/* Horní menu */
+#logo{
+  margin-top: 8px;
+}
+.active{
+  border-bottom: 2px solid #e84d0f; 
+}
+.active a{
+  color: #e84d0f;
+}
+#main-menu{
+  position: fixed;
+  z-index: 101;
+  background-color: #fff;
+  height: 86px;
+  width: 100%;
+}
+nav ul{
+  width: 97%;
+  margin-top: 25px;
+  position: absolute;
+  overflow: hidden;
+  color: #000;
+  padding: 0;
+  text-align: right;
+  margin-right: 0;
+  transition: all 1s ease-in-out;
+  position: fixed;
+}
+nav ul li{
+  display: inline-block;
+  margin: 5px 20px;
+  padding-bottom: 8px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: inherit;
+  font-family: open-sans;
+  font-weight: lighter;
+}
+nav ul li:hover {
+  color: #e84d0f;
+}
+.menu-bars{
+  width: 100%;
+  text-align: right;
+  box-shadow: border-box;
+  padding: 20px 0px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}
+.menu-bars .fas{
+  margin-right: 40px;
+  margin-top: 5px;
+  color: #1d1d1b;
+}
+@media screen and (max-width: 1000px){
+  nav ul{
+    max-height: 0px;
+    padding-left: 30px;
+    position: fixed;
+    top: 60px;
+    background-color: #fff;
+  }
+  nav ul li{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+  }
+  .menu-bars{
+    display: block;
+    position: fixed;
+    top: 0;
+  }
+  .showing{
+    max-height: 20em;
+    position: fixed;
+    top: 60px;
+  }
+  .active{
+    border-left: 2px solid #e84d0f; 
+    border-bottom: none;
+  }
+}
+
+/* Carousel */
+.carousel{
+  position: relative;
+  padding-top: 86px;
+  min-height: 440px;
+  height: 70%;
+  width: 100%
+}
+.carousel-nadpis{
+  font-family: open-sans;
+  font-weight: lighter;
+  font-size: 3em;
+  text-shadow: 1px 1px 2px #000;
+}
+.carousel-text{
+  font-family: open-sans;
+  font-weight: lighter;
+  font-size: 1.25em;
+  padding-top: 25px;
+  padding-bottom: 60px;
+}
+.carousel-button{
+  text-align: center;
+  width: 200px;
+  background-color: #fff;
+  border-radius: 25px;
+  border: 1px solid #e84d0f;
+  padding: 10px;
+  margin-right:30px;
+  float: right;
+  font-family: open-sans;
+  font-weight: lighter;
+}
+@media screen and (max-width: 550px){
+  .carousel-nadpis{
+    font-size: 1.8em;
+  }
+  .carousel-button{
+    float: none;
+    margin-left: 20%;
+  }
+}
+@media screen and (max-width: 360px){
+  .carousel-nadpis{
+    font-size: 1.5em;
+  }
+  .carousel-text{
+    font-size: 1em;
+  }
+  .carousel-button{
+    margin-left: 0%;
+  }
+  .carousel{
+    min-height: 370px;
+  }
+}
+
+/* Lišta pod carouselem */
+#bar{
+  width:96%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 2%;
+  padding-right: 2%;
+  text-align: center;
+  font-family: open-sans;
+  font-weight: lighter;
+}
+.label{
+  font-family: open-sans;
+  font-size: 0.7em;
+  color: #939393;
+}
+.text{
+  font-family: open-sans;
+  font-weight: lighter;
+  font-size: 1em;
+}
+@media screen and (max-width: 550px){
+  #bar{
+    text-align: left;
+  }
+}
+
+/* Hlavní obsah stránky, texty a obrázky */
+#main{
+  background-color: #f2f2f2;
+  width:100%;
+}
+#prvni-text{
+  max-width: 68.75em;
+  padding: 20px 10px 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#druhy-text{
+  max-width: 68.75em;
+  padding: 20px 10px 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sloupce{
+  column-count: 2;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  -webkit-column-gap: 100px; 
+  -moz-column-gap: 100px;
+  column-gap: 100px;
+  margin-top: 16px;
+}
+.sloupce p:first-child{
+  margin-top: 0;
+}
+.sloupce p{
+  text-align: left;
+}
+.hlavni-nadpis{
+  font-family: open-sans;
+  font-weight: lighter;
+  font-size: 3em;
+}
+.hlavni-nadpis-2{
+  font-family: open-sans;
+  font-weight: lighter;
+  font-size: 2.4em;
+}
+#obr1{
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  float: left;
+}
+.underline{
+  border-bottom: 1px dashed #e84d0f;
+  position: relative;
+  display: inline-block;
+}
+@media screen and (max-width: 768px){
+  .hlavni-nadpis{
+    font-size: 2em;
+  }
+  .hlavni-nadpis-2{
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 550px){
+  #obr1{
+   width: 80%;
+   float: none;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+  } 
+  .sloupce{
+    column-count:auto;
+    -webkit-column-count: auto;
+    -moz-column-count: auto;
+  }
+}
+
+/* Tooltip */
+.tooltip{
+  visibility: hidden;
+  width: 120px;
+  background-color: #464646;
+  color: #fff;
+  text-align: center;
+  padding: 2px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+.underline:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Grafy */
+#graphs{
+  max-width: 50em;
+  padding: 20px 10px 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#graph1{
+  min-width: 240px;
+	max-width: 700px;
+  height: 280px;
+	margin: 0 auto;
+  margin-left: 8%;
+}
+#graph2{
+  min-width: 240px;
+	max-width: 700px;
+  height: 280px;
+	margin: 0 auto;
+  margin-left: 8%;
+}
+.graph{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position: relative;
+}
+.logo_cast{
+  top: 130px;
+  left: 0px;
+  position: absolute;
+  z-index: 5;
+}
+.hodiny_cast{
+  top: 200px;
+  left: 5px;
+  position: absolute;
+  z-index: 5;
+}
+@media screen and (max-width: 800px) {
+  #graphs{
+   max-width: 100%;
+   }
+}
+@media screen and (max-width: 730px){
+  .logo_cast{
+    visibility: hidden;
+  }
+  .hodiny_cast{
+    visibility: hidden;
+  } 
+  #graph1{
+    margin-left: 0px;
+  }
+  #graph2{
+    margin-left: 0px;
+  }
+}
+.bez_front{
+  background-color: #ffc59b;
+  width: 15px;
+  height: 15px;
+  border-radius: 8px;
+  display: inline-block;
+}    
+.moznost_front {
+  background-color: #f88c6c;
+  width: 15px;
+  height: 15px;
+  border-radius: 8px;
+  display: inline-block;
+}
+.pravdepodobnost_front {
+  background-color: #e64e21;
+  width: 15px;
+  height: 15px;
+  border-radius: 8px;
+  display: inline-block;
+}
+.legenda ul{
+  margin-right:30px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.legenda ul li { 
+  display: inline; 
+  font-family: open-sans;
+  font-size: 0.9em;
+  margin-right: 20px;
+}
+@media screen and (max-width: 730px){
+ legenda ul{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+ }
+ .legenda ul li { 
+  display: block; 
+  margin-right: 20px;
+ }
+ .legenda{
+  text-align: left;
+  margin-left: 5%;
+ }
+}
+
+/* Patička webové stránky*/
+#paticka{
+  height: 110px;
+  text-align: center;
+  position: relative;
+  margin-top: 40px;
+  font-family: open-sans;
+  font-weight: lighter;
+  font-size: 1em;
+}
+#copyright{
+  color:  #e84d0f;
+  font-weight: bold;
+  font-size: 0.9em;
+  font-family: open-sans;
+}
+#copyright2{
+  font-weight: bold;
+  font-family: open-sans;
+}
+
