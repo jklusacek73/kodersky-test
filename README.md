@@ -1,5 +1,7 @@
 # Kodérský test
 
+**Autor:** Jiří Klusáček
+
 Celou webovou stránku jsem rozdělil na několik částí, které zde ve stručnosti popíšu. Celá stránka je responzivní a po změně velikosti se aktualizují i javaScripty (hlavně kvůli grafům).
 
 Menu
